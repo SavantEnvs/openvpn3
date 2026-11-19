@@ -1,0 +1,9 @@
+project: savantenvs/openvpn3
+target: fuzz-push-options
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-push-options/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/fuzz_push_options
+    libfuzzer: true
+    timeout: 10

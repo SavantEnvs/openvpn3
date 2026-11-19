@@ -1,0 +1,2 @@
+PUSH_REPLY,tun-ipv6,ifconfig-ipv6 fd00::2/64 fd00::1,route-ipv6 2000::/3,dns server 0 address 10.8.0.1 [fd00::1]:5353,dns search-domains example.com,dns server 0 resolve-domains corp.example.com,dns server 0 dnssec yes,dns server 0 transport DoT,dns server 0 sni dns.example.com,push-continuation 2
+PUSH_REPLY,ifconfig 10.8.0.2 10.8.0.1,topology net30,block-ipv6,tun-mtu 1400,push-continuation 1

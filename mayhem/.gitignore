@@ -1,0 +1,2 @@
+# build.sh output (objects, generated headers, binaries)
+build/

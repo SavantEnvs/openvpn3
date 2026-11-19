@@ -1,0 +1,9 @@
+project: savantenvs/openvpn3
+target: fuzz-http
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-http/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/bin/fuzz_http
+    libfuzzer: true
+    timeout: 10
